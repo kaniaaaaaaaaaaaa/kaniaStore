@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionQita! Be classy and beautiful with FashionQita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style tambahan untuk keranjang belanja */
+        .btnKeranjang {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="bg-secondary">
+    <div>
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">KaniaStore</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#carouselExample">beranda</a>
+                  <a class="nav-link active" aria-current="page" href="#Produk">produk</a>
+                  <a class="nav-link active" aria-current="page" href="#Tentang kami">tentang kami</a>
+                  <a class="nav-link active" aria-current="page" href="#Kontak"> Contact </a>
+                  <a class="nav-link active" aria-current="page"  href="#offcanvasLabel"> Tentang Produk </a>
+                </div>
+              </div>
+            </div>
+        </nav>
+          <nav class="navbar bg-primary" data-bs-theme="dark">
+            <!-- Navbar content -->
+          </nav>
+
+          <!--coursel-->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Black White Elegant Monogram Initial Name Logo.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            <!--catalog-->
+            <h3 class="text-center" id="Produk">Produk</h3>
+            <div class="text-center w-50 mx-auto fw-light" ></div>
+            <ul class="row row-cols-md-2 gx-5 p-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div></div>
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="produk 1.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Fellian blouse import 1870</h5>
+                          <p class="card-text">Detail Produk</p>
+                            <p class="card-text">• Bahan yang digunakan premium </p>
+                            <p class="card-text">• bahan halus, flowly, dan nyaman dipakai</p>
+                            <p class="card-text">• Tidak menerawang</p>
+                            <p class="card-text">• Jahitan double, rapi dan kuat
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="card-footer d-md-flex">
+                            <a class="btn btn-sm btn-primary d-block btnBeli" onclick="beliProduk1()">Beli</a>
+                            <a class="btn btn-sm btn-secondary d-block btnKeranjang" onclick="tambahKeKeranjang(1)">Keranjang</a>
+                            <span class="ms-auto text-danger fw-blod d-block text-center harga">Rp. 91.500</span>
+                        </div>
+                      </div>
+                      <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="produk 2.jpg" class="img-fluid rounded-start"  alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Dhozen jaket varsity dreamer A281
+                            </h5>
+                            <p class="card-text">Detaile Produk</p>
+                              <p>- Kualitas Terjamin Menggunakan Bahan No.1</p>
+                              <p> -Transaksi Aman & Tukar Ukuran Mudah</p>
+                              <p>-Jahitan double, rapi dan kuat</p>
+                          </div>
+                        </div>
+                      </div>
+                          <div class="card-footer d-md-flex">
+                              <a class="btn btn-sm btn-primary d-block btnBeli" onclick="beliProduk2()">Beli</a>
+                              <a class="btn btn-sm btn-secondary d-block btnKeranjang" onclick="tambahKeKeranjang(2)">Keranjang</a>
+                              <span class="ms-auto text-danger fw-blod d-block text-center harga">Rp. 130.000</span>
+                          </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="produk 3.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">One set ootd vest jenny</h5>
+                                  <p class="card-text">Detail Produk</p>
+                                  <p>-One set hijab (4 in 1) premium baju set wanita ootd vest jenny kemeja kulot korean style</p>
+                                  <p>-Jahitan double, rapi dan kuat</p>
+                                  <p>-Kualitas Terjamin Menggunakan Bahan No.1</p>
+                                </div>
+                              </div>
+                            </div>
+                                <div class="card-footer d-md-flex">
+                                    <a class="btn btn-sm btn-primary d-block btnBeli" onclick="beliProduk3()">Beli</a>
+                                    <a class="btn btn-sm btn-secondary d-block btnKeranjang" onclick="tambahKeKeranjang(3)">Keranjang</a>
+                                    <span class="ms-auto text-danger fw-blod d-block text-center harga">Rp. 189.826</span>
+                                </div>
+                         </div>
+                              <div class="card mb-3" style="max-width: 540px;">
+                                <p></p>
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="produk 4.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Kemeja vintage blouse wanita
+                                      </h5>
+                                      <p class="card-text">Detail Produk</p>
+                                      <p>• bahan halus, flowly, dan nyaman dipakai
+                                      </p>
+                                      <p>• Tidak menerawang</p>
+                                      <p>• Jahitan double, rapi dan kuat
+                                      </p>
+                                      <p>• Bahan yang digunakan premium </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                    <div class="card-footer d-md-flex">
+                                        <a class="btn btn-sm btn-primary d-block btnBeli" onclick="beliProduk4()">Beli</a>
+                                        <a class="btn btn-sm btn-secondary d-block btnKeranjang" onclick="tambahKeKeranjang(4)">Keranjang</a>
+                                        <span class="ms-auto text-danger fw-blod d-block text-center harga">Rp. 77.000</span>
+                                    </div>
+                                  </div>
+
+
+                            <!-- Keranjang -->
+                                <div id="Keranjang" class="px-4 py-4">
+                               <h3 class="text-center">Keranjang Belanja</h3>
+                               <ul id="listKeranjang" class="list-group">
+                              </ul>
+                              <div id="totalHarga" class="text-center mt-3"></div>
+                               <div class="text-center mt-3">
+                              <button class="btn btn-danger" onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+                              <button class="btn btn-success" onclick="beliSemuaProduk()">Beli</button>
+                          </div>
+                         </div>
+
+
+                         <!--katagori-->
+                         <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasLabel">Tentang produk</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                           <p> Kategori</p>
+
+ <p>• Kemeja Vintage</p>
+<p>• One Set Ootd</p>
+<p>• Jaket Varsity</p>
+<p>• Atasan Blouse</p>
+
+<p>Detail Produk</p>
+
+• Bahan yang digunakan premium</p> 
+• bahan halus, flowly, dan nyaman dipakai</p>
+• Tidak menerawang</p>
+• Jahitan double, rapi dan kuat</p>
+
+Detail Ukuran </p>
+
+• Toleransi ukuran 1-2 cm</p>
+• Allsize fit to L</p>
+• Lingkar dada 100 cm</p>
+
+Catatan Penjual</p>
+
+• Waktu operasional dan pengiriman </p>
+Hari Senin s.d Sabtu pukul 08.00 s.d 16.00 WIB.</p>
+• Checkout sebelum pukul 14.00 WIB akan dikirim pada hari yang sama.</p>
+• Checkout setelah pukul 14.00 WIB akan dikirim pada hari berikutnya.</p>
+                          </div>
+                        </div>
+
+                        <!--Tentang kami-->
+                        <div></div>
+                        <div id="Tetang kami" class="px-4 py-4 bg-secondary text-center">
+                          <div class="mx-auto w-75"></div>
+                          <h3 class="text-white"> Tentang Kami</h3>
+                          <p class="text-center text-white">Halo..! Selamat datang di FashionQita! Be classy and beautiful with FashionQita !
+
+                            Kami menyediakan berbagai produk fashion pria dan wanita yang dibuat dengan bahan-bahan yang premium. Sehingga pakaian yang digunakan akan terasa lembut dan nyaman untuk digunakan sehari-hari. Dengan desain yang berkelas akan membuat penampilan kamu semakin stylish dan fashionable tanpa banyak usaha. 
+                            Yuk kepoin desain selengkapnya di etalase FashionQita..</p>
+                          <p class="text-center text-white">Follow toko kami untuk pemberitahuan produk baru dan promo-promo menarik selanjutnya.
+
+                            Happy Shopping..!!!!</p>
+                      </div>
+              
+
+
+            <!-- Kontak -->
+            <div></div>
+        <div id="Kontak" class="px-4 py-4 bg-secondary text-center">
+          <div class="mx-auto w-75"></div>
+          <h3 class="text-white">Kontak Kami</h3>
+          <!-- Tautan Kontak Kami -->
+          <p class="text-center text-white">Silakan hubungi kami melalui nomor <a href="https://wa.me/+6288972128429"></a>@088972128429</p>
+
+          <!-- Tautan Instagram -->
+          <p class="text-center text-white">Ikuti kami di Instagram: <a href="https://www.instagram.com/xy.nazly_?igsh=b3RkazcxMHU2Nmo=">@xy.nazly_</a></p>
+
+          <!-- copyright -->
+          <div class="text-center text-white border-top ">&copy; 2024 - FashionQita! Be classy and beautiful with FashionQita</div>
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+      var keranjang = [];
+
+      function tambahKeKeranjang(id) {
+          var produk;
+          if (id === 1) {
+              produk = { nama: "Fellian blouse import 1870", harga: 91500 };
+          } else if (id === 2) {
+              produk = { nama: "Dhozen jaket varsity dreamer A281", harga: 130000 };
+          } 
+          else if (id === 3) {
+              produk = { nama: "BOne set ootd vest jenny", harga: 189826 };
+          } 
+          else if (id === 4) {
+              produk = { nama: "Kemeja vintage blouse wanita", harga: 77000 };
+          } 
+
+          keranjang.push(produk);
+          tampilkanKeranjang();
+      }
+
+      function tampilkanKeranjang() {
+          var listKeranjang = document.getElementById("listKeranjang");
+          var totalHarga = 0;
+          listKeranjang.innerHTML = "";
+          keranjang.forEach(function(produk) {
+              var listItem = document.createElement("li");
+              listItem.className = "list-group-item";
+              listItem.textContent = produk.nama + " - Rp. " + produk.harga.toLocaleString();
+              listKeranjang.appendChild(listItem);
+              totalHarga += produk.harga;
+          });
+          var totalHargaElement = document.getElementById("totalHarga");
+          totalHargaElement.textContent = "Total Harga: Rp. " + totalHarga.toLocaleString();
+      }
+
+      function kosongkanKeranjang() {
+          keranjang = [];
+          tampilkanKeranjang();
+      }
+
+      function beliSemuaProduk() {
+          // Ganti nomor WhatsApp dengan nomor toko Anda
+          var nomorWhatsApp = "6288972128429";
+          var pesan = "Halo, saya ingin membeli produk: ";
+          keranjang.forEach(function(produk) {
+              pesan += produk.nama + ", ";
+          });
+          pesan += ". Terima kasih!";
+          var urlWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + encodeURIComponent(pesan);
+          window.open(urlWhatsApp, "_blank");
+      }
+
+      function beliProduk1() {
+          // situs web lain
+          var urlProduk = "https://shopee.co.id/Fellian-Blouse-Import-1870-3M-i.66953032.23272795635?sp_atk=685c4d48-e940-46c0-aa0e-ec67c64bc858&xptdk=685c4d48-e940-46c0-aa0e-ec67c64bc858";
+          // Buka halaman produk di situs web lain
+          window.open(urlProduk, "_blank");
+      }
+      function beliProduk2() {
+          // situs web lain
+          var urlProduk = "https://shopee.co.id/Dhozen-Jaket-Varsity-Dreamer-A281-i.377903157.11596151960?sp_atk=e44d8192-57c6-44c7-8935-23441598aee0&xptdk=e44d8192-57c6-44c7-8935-23441598aee0";
+          // Buka halaman produk di situs web lain
+          window.open(urlProduk, "_blank");
+      }
+      function beliProduk3() {
+          // situs web lain
+          var urlProduk = "https://shopee.co.id/Rhea-One-set-hijab-(4-in-1)-premium-baju-set-wanita-ootd-vest-jenny-kemeja-kulot-highwaist-korean-style-setelan-wanita-remaja-ulzzang-INT-001-Korean-Style-Chic-Set-Perfect-for-Trendy-Teens-i.1158347036.25575606672?sp_atk=fe3f20dd-44d9-4e6f-a4ec-2c0098950738&xptdk=fe3f20dd-44d9-4e6f-a4ec-2c0098950738";
+          // Buka halaman produk di situs web lain
+          window.open(urlProduk, "_blank");
+      }
+      function beliProduk4() {
+          // situs web lain
+          var urlProduk = "https://shopee.co.id/yikoo-Kemeja-korea-lengan-panjang-bermotif-vintage-shirt-atasan-blouse-wanita-i.487939186.12637455382?sp_atk=235a2177-1e6b-4ba0-871c-3eb744383947&xptdk=235a2177-1e6b-4ba0-871c-3eb744383947";
+          // Buka halaman produk di situs web lain
+          window.open(urlProduk, "_blank");
+      }
+      
+  </script>
+</body>
+</html>
